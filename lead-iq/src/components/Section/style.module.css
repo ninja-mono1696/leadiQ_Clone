@@ -1,0 +1,30 @@
+.darkSection{
+    background-image: linear-gradient(180deg, #042d3a, #063c4d);
+}
+.heroSection{
+    width: 100%;
+}
+._160mg{
+    margin-top: -160px;
+    overflow: hidden;
+}
+.mainSection{
+    position: relative;
+    display: flex;
+    max-width: 1225px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 24px;
+    padding-bottom: 50px;
+    padding-left: 24px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    @media screen and (min-width: 1440px){
+        margin-top: 320px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+    }
+}
