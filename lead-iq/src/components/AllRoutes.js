@@ -5,6 +5,7 @@ import PrivacyCenter from '../pages/privacyCenter';
 import Support from '../pages/support';
 import Login from '../pages/login';
 import BookDemo from '../pages/bookDemo';
+import SignUp from '../pages/signup';
 
 const AllRoutes = () => {
     return (
@@ -15,6 +16,7 @@ const AllRoutes = () => {
 		        <Route path='/support' component={Support} />
 		        <Route path='/login' component={Login} />
 				<Route path='/bookDemo' component={BookDemo} />
+				<Route path='/signup' component={SignUp} />
 	        </Routes>
 	    </>
     )

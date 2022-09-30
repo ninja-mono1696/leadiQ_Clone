@@ -6,7 +6,6 @@ export const Nav = styled.nav`
 padding: 20px 24px;
 position: relative;
 z-index: 10;
-// background: #042d3a;
 `;
 
 export const NavLink = styled(Link)`

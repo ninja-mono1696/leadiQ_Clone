@@ -37,6 +37,7 @@
     align-items: center;
 }
 .primaryBtn{
+    display: block;
     padding: 15px 24px;
     display: inline-block;
     line-height: 18px;
@@ -52,4 +53,9 @@
     transition: all 350ms ease;
     box-shadow: 4px 4px 16px 0 rgb(255 210 101 / 16%);
     cursor: pointer;
+}
+@media screen and (max-width: 768px){
+    .primaryBtn{
+        display: none;
+    }
 }
