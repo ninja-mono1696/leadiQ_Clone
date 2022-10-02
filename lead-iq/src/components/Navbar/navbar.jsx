@@ -1,32 +1,21 @@
 import React from 'react';
-import style from './style.module.css';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import style from './style.module.css';
 import Button from './Button';
 
 const Navbar = () => {
-    const navStyle = {
-        willChange: 'background',
-        backgroundColor: 'rgba(0, 0, 0, 0)',
-        '&::before': {
-            content: `" "`,
-            display: 'table',
-            gridColumnStart: '1',
-            gridRowStart: '1',
-            gridColumnEnd: '2',
-            gridRowEnd: '2'
-        },
-        '&::after': {
-            content: `" "`,
-            display: 'table',
-            gridColumnStart: '1',
-            gridRowStart: '1',
-            gridColumnEnd: '2',
-            gridRowEnd: '2'
+    const [colorChange, setColorchange] = useState(false);
+    const changeNavColor = () => {
+        if(window.scrollY >= 300){
+            setColorchange(true);
+        } else{
+            setColorchange(false);
         }
-    }
-
+    };
+    window.addEventListener('scroll', changeNavColor);
     return (
-        <div className={style.nav} style={navStyle}>
+        <div className={colorChange ? style.colorChange : style.nav}>
             <div className={style.navContainer}>
                 <div className={style.logo}>
                     <Link to='/'>

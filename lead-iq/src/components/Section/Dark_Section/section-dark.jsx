@@ -1,6 +1,7 @@
 import React from "react";
-import style from './style.module.css';
 import { Link } from "react-router-dom";
+import style from './style.module.css';
+import Text from "./text";
 
 const SectionDark = () => {
     return (
@@ -13,7 +14,7 @@ const SectionDark = () => {
                             <h1 className={style.bold}>Prospecting that's personal</h1>
                             <div className={style.content_wrap}>
                                 <div className={style.word_wrap}>
-                                    
+                                    <Text />
                                 </div>
                             </div>
                             <div className={style.inline}>
@@ -27,16 +28,18 @@ const SectionDark = () => {
                         </div>
                         <div className={style.hero_video}>
                             <div className={style.video_embed}>
-                                <p>
-                                    <a href="https://leadiq.com?wvideo=j1n36pcr0x">
-                                        <img src="https://embed-ssl.wistia.com/deliveries/cfde895b5b6e3ad4e2d94fdba605c546.jpg?image_play_button_size=2x&amp;image_crop_resized=960x540&amp;image_play_button=1&amp;image_play_button_color=00d586e0" width="400" height="225" style={{width: '400px'}{height: '225px'}} alt="video" />
-                                            </a>
-                                            </p>
-                                            <p>
-                                                <a href="https://leadiq.com?wvideo=j1n36pcr0x">LeadIQ | B2B Outbound Sales Prospecting Software</a>
-                                                </p>
+                                <div>
+                                    <iframe allowtransparency="true" title="Wistia video player" allowFullscreen frameborder="0" scrolling="no" className="wistia_embed" name="wistia_embed" src="https://fast.wistia.net/embed/iframe/j1n36pcr0x" width= '100%' height= '662.05px'></iframe>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                    <div className={style.section_2}>
+                        <div className={style.hero_section_2}>
+                            <h2 className={style.section_2_h2}>Too many sellers, sending too many messages</h2>
+                            <p className={style.section_2_p}>The world has never before been this noisy.</p>
+                        </div>
+                        <img className={style.world_noise_img} src="https://assets.website-files.com/60819f9be381394642b5659e/631a3251de5c6f228f20bd7a_world-noise.svg" alt="world-noise-img" loading="lazy" />
                     </div>
                 </div>
             </div>

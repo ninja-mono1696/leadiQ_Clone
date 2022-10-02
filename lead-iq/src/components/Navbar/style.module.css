@@ -3,8 +3,32 @@
     top: 0px;
     padding-top: 24px;
     padding-bottom: 24px;
-    background: #dddddd;
+    background: rgba(0, 0, 0, 0);
     z-index: 1000;
+}
+.colorChange{
+    position: sticky;
+    top: 0px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    z-index: 1000;
+    background-color: #dddddd;
+}
+.nav::before{
+    content: " ";
+    display: table;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 2;
+}
+.nav::after{
+    content: " ";
+    display: table;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 2;
 }
 .navContainer{
     display: flex;
